@@ -1,0 +1,12 @@
+@use "../utils/" as u;
+
+:root {
+	font-size: 0.625;
+	font-family: u.$font;
+}
+
+.container {
+	max-width: 1200px;
+	margin: auto;
+	position: relative;
+}

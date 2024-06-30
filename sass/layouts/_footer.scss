@@ -1,0 +1,79 @@
+@use "../global/colors";
+
+.footer {
+	padding: 2rem 2rem;
+
+	&__container {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+
+		&-title {
+			margin-bottom: 1.2rem;
+			// color: colors.$color-white;
+			font-size: 2.6rem;
+		}
+
+		&--contact {
+			display: flex;
+			flex-direction: column;
+			gap: 1.4rem;
+
+			&-location {
+				i {
+					font-size: 1.2rem;
+				}
+				span {
+					font-size: 1.2rem;
+					margin-left: 1rem;
+				}
+			}
+
+			&-phone {
+				i {
+					font-size: 1.2rem;
+				}
+
+				span {
+					font-size: 1.2rem;
+					margin-left: 1rem;
+				}
+			}
+
+			&-schedule {
+				i {
+					font-size: 1.2rem;
+				}
+
+				span {
+					font-size: 1.2rem;
+					margin-left: 1rem;
+				}
+			}
+
+			&-social {
+				display: flex;
+				gap: 1rem;
+				font-size: 1.2rem;
+				color: colors.$color-white;
+				margin-top: 1.2rem;
+			}
+
+			&-social span i {
+				color: colors.$color-white;
+			}
+
+			&-social span:hover i {
+				color: colors.$color-black;
+			}
+		}
+
+		&--links {
+			display: flex;
+			flex-direction: column;
+			gap: 1.4rem;
+			&-link {
+				font-size: 1.2rem;
+			}
+		}
+	}
+}

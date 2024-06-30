@@ -1,0 +1,144 @@
+@use "../global/colors";
+
+.register {
+	margin-top: 8rem;
+	margin-bottom: 5rem;
+	position: relative;
+	padding-bottom: 2rem;
+
+	label {
+		margin-bottom: 2rem;
+	}
+
+	&__sub-container {
+		position: relative;
+		z-index: 6;
+	}
+
+	&__container {
+		display: flex;
+		gap: 4rem;
+		justify-content: end;
+
+		&-pic img {
+			max-width: 100%;
+		}
+
+		&-form {
+			max-width: 100%;
+			padding: 2rem 2rem;
+		}
+	}
+
+	&__bg-bottom img {
+		position: absolute;
+		z-index: 1;
+		max-width: 100%;
+		bottom: 0;
+	}
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: 3.4rem;
+	background-color: rgba(255, 255, 255, 1);
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	border-radius: 8px;
+	padding: 2rem 2rem;
+
+	&__title {
+		font-size: 4rem;
+		font-weight: 700;
+		text-align: center;
+	}
+
+	&__children-container {
+		display: flex;
+		gap: 1rem;
+		width: 100%;
+
+		&-input {
+			position: relative;
+			display: flex;
+			align-items: center;
+			border: 1px solid transparent;
+			width: 100%;
+		}
+
+		&-input i {
+			position: absolute;
+			top: 13px;
+			left: 15px;
+			font-size: 1.4rem;
+			color: colors.$color-purple;
+		}
+	}
+
+	&__children-container input {
+		border-radius: 20px;
+		height: 4rem;
+		width: 100%;
+		padding-left: 3rem;
+		border: 1px solid darkgrey;
+	}
+
+	&__select-container {
+		position: relative;
+	}
+
+	&__select-container i {
+		position: absolute;
+		top: 13px;
+		left: 15px;
+		font-size: 1.4rem;
+		color: colors.$color-purple;
+	}
+
+	&__select-container select {
+		width: 100%;
+		height: 4rem;
+		border-radius: 20px;
+		padding-left: 3rem;
+		padding-right: 2rem;
+	}
+
+	&__textarea-container {
+		position: relative;
+		width: 100%;
+	}
+
+	&__textarea-container i {
+		position: absolute;
+		top: 6px;
+		left: 15px;
+		font-size: 1.4rem;
+		color: colors.$color-purple;
+	}
+
+	&__textarea-container textarea {
+		border-radius: 8px;
+		padding-left: 4rem;
+		width: 100%;
+	}
+
+	&__btn-submit {
+		width: 100%;
+	}
+
+	&__btn-submit input {
+		width: 35%;
+		height: 4.8rem;
+		border-radius: 30px;
+		color: colors.$color-white;
+		background-color: colors.$color-purple;
+		border: 1px solid darkgray;
+		transition: all 300ms ease;
+	}
+
+	&__btn-submit:hover input {
+		background-color: colors.$color-white;
+		color: colors.$color-purple;
+		border-color: colors.$color-purple;
+	}
+}

@@ -1,0 +1,81 @@
+@use "../global/colors";
+
+.header {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	z-index: 5;
+	padding: 0 3rem;
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__contents {
+		font-size: 1.6rem;
+		display: flex;
+		gap: 6.4rem;
+		align-items: center;
+	}
+
+	&__nav {
+		display: flex;
+		gap: 4.2rem;
+	}
+}
+
+.header.sticky {
+	position: fixed;
+	background-color: colors.$color-white;
+}
+
+.header__logo img {
+	width: 8rem;
+	height: 8rem;
+}
+
+.header__contacts {
+	display: flex;
+	gap: 2rem;
+	align-items: center;
+}
+
+.header__contact--container-link {
+	display: flex;
+	color: colors.$color-white;
+	background-color: colors.$color-purple;
+	padding: 1.2rem 1.4rem;
+	border-radius: 50px;
+	border-color: transparent;
+	border: 1px solid transparent;
+	transition: all 300ms ease;
+
+	&-icon {
+		color: inherit;
+	}
+
+	&-icon i {
+		color: inherit;
+	}
+
+	&-number {
+		color: inherit;
+	}
+}
+
+.header__contact--container a:hover {
+	background-color: colors.$color-white;
+	color: colors.$color-purple;
+	border-color: colors.$color-purple;
+}
+
+.header__contacts-social i {
+	font-size: 1.4rem;
+	transition: all 300ms ease;
+}
+
+.header__contacts-social:hover i {
+	color: colors.$color-purple;
+}

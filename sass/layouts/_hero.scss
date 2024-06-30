@@ -1,0 +1,42 @@
+@use "../global/colors";
+
+.hero {
+	padding-top: 5rem;
+	background-image: url(../../img/yellow_top_wave_01.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 100%;
+	position: relative;
+	padding-bottom: 5rem;
+}
+
+.hero__container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 6rem;
+}
+
+.hero__title {
+	width: 100%;
+	padding-left: 5.6rem;
+	&-head {
+		font-size: 1.8rem;
+		color: colors.$color-purple;
+		margin-bottom: 1.8rem;
+		text-transform: uppercase;
+	}
+
+	&-description {
+		font-size: 6.4rem;
+		font-weight: 700;
+		line-height: 1.2;
+	}
+}
+
+.hero__bottom-bg img {
+	position: absolute;
+	max-width: 100%;
+	z-index: 2;
+	bottom: 0;
+}
