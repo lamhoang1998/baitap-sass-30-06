@@ -16,6 +16,8 @@
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
 	gap: 2.8rem;
+	padding-left: 3rem;
+	padding-right: 3rem;
 	z-index: 2;
 	&--item-pic img {
 		width: 100%;
