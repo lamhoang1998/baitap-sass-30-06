@@ -69,13 +69,15 @@
 
 .teachers__bottom-bg {
 	position: absolute;
+	width: 100%;
 	z-index: 1;
 	right: 0;
 	left: 0;
 	bottom: 0;
 }
 
-.teachers__bottom-bg img {
-	width: 100%;
-	overflow: hidden;
-}
+// .teachers__bottom-bg img {
+
+// 	overflow: hidden;
+// 	position: absolute;
+// }
