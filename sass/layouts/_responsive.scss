@@ -26,7 +26,34 @@
 	}
 }
 
-@media (max-width: 59em) {
+@media (max-width: 61em) {
+	.header__container {
+		display: flex;
+		flex-direction: column;
+		position: fixed;
+		z-index: 10;
+
+		overflow: scroll;
+		background-color: #fff;
+		min-height: 100%;
+		left: 0;
+	}
+
+	.header__contents {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.header__nav {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.header__contacts {
+		display: flex;
+		flex-direction: column;
+	}
+
 	.teachers__container {
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: auto;
