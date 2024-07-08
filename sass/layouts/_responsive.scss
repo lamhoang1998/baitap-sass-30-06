@@ -32,11 +32,13 @@
 		flex-direction: column;
 		position: fixed;
 		z-index: 10;
-
+		opacity: 0;
 		overflow: scroll;
 		background-color: #fff;
+		box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 		min-height: 100%;
 		left: 0;
+		transition: all 1s ease-in-out;
 	}
 
 	.header__contents {
@@ -54,8 +56,31 @@
 		flex-direction: column;
 	}
 
+	.header__sidebar-btn {
+		display: block;
+	}
+
+	.nav-open .header__container {
+		opacity: 1;
+	}
+
+	.nav-open .fa-xmark {
+		display: block;
+	}
+
+	.nav-open .fa-bars {
+		display: none;
+	}
+
 	.teachers__container {
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: auto;
+	}
+}
+
+@media (max-width: 57em) {
+	.hero__title-description {
+		font-size: 5.8rem;
+		line-height: 1;
 	}
 }

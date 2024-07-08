@@ -1,5 +1,6 @@
 const sectionTeacher = document.getElementById("section-teacher");
 const header = document.querySelector(".header");
+const btnMobileNav = document.querySelector(".header__sidebar-btn");
 
 const initialCoords = sectionTeacher.getBoundingClientRect();
 
@@ -10,4 +11,8 @@ window.addEventListener("scroll", function () {
 	} else {
 		header.classList.remove("sticky");
 	}
+});
+
+btnMobileNav.addEventListener("click", function () {
+	header.classList.toggle("nav-open");
 });
