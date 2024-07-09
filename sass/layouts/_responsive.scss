@@ -30,14 +30,16 @@
 	.header__container {
 		display: flex;
 		flex-direction: column;
+		align-items: flex-start;
 		position: fixed;
 		z-index: 10;
 		opacity: 0;
 		overflow: scroll;
 		background-color: #fff;
 		box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-		min-height: 100%;
+		width: 200px;
 		left: 0;
+		top: 0;
 		transition: all 1s ease-in-out;
 	}
 
@@ -70,6 +72,13 @@
 
 	.nav-open .fa-bars {
 		display: none;
+	}
+
+	header.nav-open {
+		margin-left: 200px;
+	}
+	.nav-open ~ section {
+		margin-left: 200px;
 	}
 
 	.teachers__container {
