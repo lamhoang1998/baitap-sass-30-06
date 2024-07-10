@@ -18,3 +18,7 @@ btnMobileNav.addEventListener("click", function (e) {
 	console.log(e.target);
 	header.classList.toggle("nav-open");
 });
+
+header.addEventListener("click", function (e) {
+	console.log(e.target);
+});

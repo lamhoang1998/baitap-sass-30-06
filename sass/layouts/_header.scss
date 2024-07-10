@@ -92,5 +92,10 @@
 }
 
 .fa-bars {
-	display: block;
+	position: relative;
+	z-index: 15;
 }
+
+// .fa-bars {
+// 	display: block;
+// }
