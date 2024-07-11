@@ -1,10 +1,17 @@
 @use "../global/colors";
 
 .footer {
-	padding: 2rem 2rem;
-	background-image: url(../../img/footer_background.jpg);
-	background-size: 100%;
-	min-height: 400px;
+	// padding: 2rem 2rem;
+	// background-image: url(../../img/footer_background.jpg);
+	// background-size: 100%;
+	// min-height: 400px;
+	position: relative;
+
+	&__bg img {
+		position: absolute;
+		max-width: 100%;
+		min-height: 100%;
+	}
 
 	&__container {
 		display: grid;

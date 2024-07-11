@@ -18,7 +18,8 @@
 	}
 
 	.hero__title-description {
-		font-size: 5.8rem;
+		font-size: 4.6rem;
+		line-height: 1;
 	}
 
 	.footer__container--contact {
@@ -86,11 +87,81 @@
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: auto;
 	}
+
+	.footer__container {
+		gap: 2rem;
+	}
+
+	.footer__container--sub {
+		gap: 2rem;
+		padding-left: 0;
+	}
 }
 
 @media (max-width: 57em) {
 	.hero__title-description {
-		font-size: 5.8rem;
+		font-size: 4.2rem;
 		line-height: 1;
+	}
+
+	.footer__container {
+		gap: 2rem;
+	}
+}
+
+@media (max-width: 51.5em) {
+	.hero__title-description {
+		font-size: 3.4rem;
+	}
+}
+
+@media (max-width: 45.25em) {
+	.hero__title-description {
+		font-size: 3.2rem;
+	}
+
+	.form {
+		gap: 2rem;
+		padding: 1rem 1rem;
+	}
+
+	.form label {
+		margin-bottom: 0;
+	}
+
+	.form__title {
+		font-size: 2.4rem;
+	}
+
+	.form__children-container {
+		gap: 0.5rem;
+	}
+
+	.form__children-container-input input {
+		height: 2.4rem;
+	}
+
+	.form__children-container-input i {
+		font-size: 1rem;
+		top: 8px;
+		left: 18px;
+	}
+
+	.form__select-container {
+		gap: 0.5rem;
+	}
+
+	.form__select-container select {
+		height: 2.4rem;
+	}
+
+	.form__select-container i {
+		font-size: 1rem;
+		top: 8px;
+		left: 18px;
+	}
+
+	.footer__container {
+		grid-template-columns: 1fr 1fr;
 	}
 }
